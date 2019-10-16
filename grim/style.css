@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	background:url("http://total-rating.ru/k/sewer-amerik.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+p {
+	color:  #f00c0c;
+	font-size: 20px;
+	font-family: 'Acme', sans-serif;
+	margin-left: 20px;
+	margin-right: 20px; 
+	
+}
+h1 {
+	color: #FF33CC;
+	font-size: 30px;
+	font-family: 'Bree Serif', serif;
+}
+div {
+	font-size: 50px;
+	font-family: 'Bree Serif', serif;
+}
+a {
+	color: #6ccc41s;
+	text-decoration: none;
+	padding: 10px;
+}
+#programist {
+	margin: auto;
+	width: 60%;
+	background-color: #41cccc;
+}
+#header{
+
+	height: 100px;
+	background-color: #4e41cc;
+}
+#leftarrow, #rightarrow {
+	width: 70px;
+	height: auto;
+}
+#left {
+	position: absolute;
+	left: 280px;
+	top: 15px;
+}
+#right {
+	position: absolute;
+	left: 990px;
+	top: 15px;
+}
+.spod{
+	padding: 20px;
+	display: flex;
+	font-size: 30px;
+}
