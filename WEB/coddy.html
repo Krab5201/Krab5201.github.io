@@ -1,0 +1,87 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Justify-content</title>
+	<style>
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6 {
+	display: flex;
+}
+.block1 {
+	justify-content: flex-start; /**/
+}
+.block2 {
+	justify-content: flex-end; /**/
+}
+.block3 {
+	justify-content: space-evenly; /**/
+}
+.block4 {
+	justify-content: center; /**/
+}
+.block5 {
+	justify-content: space-between; /**/
+}
+.block6 {
+	justify-content: space-around; /**/
+}
+div>div {
+	width: 50px;
+	height: 50px;
+	background: rgb(0,150,208);
+	color: #fff;
+	background-color: orange;
+	margin: 1px;
+	display: inline-block;
+}
+div:hover {
+	outline: 4px solid #FF4900;
+}
+</style>
+</head>
+<body>
+	<h3>Justify-content: flex-start;</h3>
+	<div class="block1"> <!-- блочный флекс контейнер-->
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<p>flex-wrap:wrap</p>
+		<div class="block2">
+			<div>A</div>
+			<div>B</div>
+			<div>C</div>
+	</div>
+	<p>flex-wrap:wrap-reverse</p>
+		<div class="block3">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	<p>flex-wrap:wrap-reverse</p>
+		<div class="block4">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	<p>flex-wrap:wrap-reverse</p>
+		<div class="block5">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	<p>flex-wrap:wrap-reverse</p>
+		<div class="block6">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		
+	</div>
+</body>
+</html>
