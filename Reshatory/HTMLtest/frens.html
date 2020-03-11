@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS + HTML</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<h1 id = "zag1">Заголовок</h1>
+	
+	
+	<ol id="list">
+	
+		<li>Первый</li>
+		<li>Второй</li>
+		<li>Третий</li>
+
+	</ol>
+	
+	<input type="text" id="txt" autofocus="true">
+	<button onclick="Pared()">Перед</button>
+	<button onclick="Parle()">После</button>
+	<button onclick="Parro()">Начало</button>
+	<button onclick="Paruh()">Конец</button>
+
+	<script>
+		function Pared() {
+			let text = $('#txt').val();
+			$('#list').before('<li>'+ text +'</li>');
+			$('#txt').val('');
+			$('#txt').focus();	
+		}
+		
+		function Parle() {
+			let text = $('#txt').val();
+			$('#list').prepend('<li>'+ text +'</li>');
+			$('#txt').val('');
+			$('#txt').focus();
+		}
+
+		function Parro() {
+			let text = $('#txt').val();
+			$('#list').append('<li>'+ text +'</li>');
+			$('#txt').val('');
+			$('#txt').focus();
+		}
+		
+		function Paruh() {
+			let text = $('#txt').val();
+			$('#list').after('<li>'+ text +'</li>');
+			$('#txt').val('');
+			$('#txt').focus();
+		}
+		
+		
+
+		// let elem = document.getElementById("zag1");
+		// let text1 = prompt("Введите первый заголовок");
+		// elem.innerHTML = text1;
+
+		// //let body = document.getElementsByTagName("body")[0];
+		// let body = document.body;
+		// let p = document.createElement('p');
+		// let text2 = "Содержимое абзаца";
+		// p.innerHTML = text2;
+		// body.appendChild(p);
+
+		// $('').здусь_пишем_что_с_этим_делать()
+		// $('body').append('<h2>Новый заголовок</h2>');
+		// let newText = prompt("Введите текст");
+
+		// $('h2').text(newText)
+
+	</script>
+</body>
+</html>

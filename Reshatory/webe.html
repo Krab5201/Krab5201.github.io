@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сайт</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+		<input type="text" placeholder="Имя" id="name">
+		<input type="text" placeholder="Фамилия" id="s_name">
+		<input type="submit" id="button" onclick="Form()">
+
+		<script>
+			function Form() {
+				// toUpperCase() - большие буквы
+				// toLowerCase() - маленькие буквы
+				let name = $('#name').val().toLowerCase();
+				let s_name = $('#s_name').val().toLowerCase();
+
+				name[0] = name[0].toUpperCase();
+				s_name[0] = s_name[0].toUpperCase();
+
+				$('input').remove();
+				console.log($('#name'))
+				$('body').prepend('<div id="d"><p id="p">Спасибо, '+ name +' '+ s_name +', мы приняли вашу заявку!</p></div');
+
+				$('#d').css('margin', 'auto')
+				$('#d').css('width', '500px')
+				$('#d').css('height', '150px')
+				$('#d').css('background-color', '#9FF606')
+				$('#d').css('color', 'blue')
+				$('#d').css('border-radius', '30px')
+				$('#d').css('padding', '25px')
+
+				$('#p').css('font-size', '2em')
+				$('#p').css('text-align', 'center')
+			}
+
+
+		</script>
+</body>
+</html>
