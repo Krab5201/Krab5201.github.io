@@ -67,7 +67,6 @@ window.onload = function() {
 		if(clicks==20){
 			theEnd('Прости, но ты неудачник!!!')
 		}
-		//Проверка выигрыша
 		//Выводим подсказку
 		$('#canvas').drawImage({
 			source: hint,
